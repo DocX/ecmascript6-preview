@@ -1,9 +1,11 @@
+  // default parameters
   function defaultParams(a,b = 'b', c = 'c') {
     log("a == " + a);
     log("b == " + b);
     log("c == " + c);
   }
 
+  // default parameters and rest parameters
   function restParams(a, b = 10, ...params) {
     log('a == ' + a);
     log('b == ' + b);
@@ -13,6 +15,7 @@
     }
   }
 
+  // implementation of previous function using old JS
   function withArguments(a,b) {
     if (b === undefined) {
       b = 10;
