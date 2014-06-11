@@ -42,7 +42,7 @@ printA();
 printAvar();
 
 try{
-  log('accessing "a"');
+  log('accessing "a" after let block');
   log(a);
 } catch (e) {
   log('Error ' + e)
